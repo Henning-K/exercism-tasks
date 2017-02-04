@@ -8,7 +8,7 @@ fn test_no_matches() {
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 fn test_detect_simple_anagram() {
     let inputs = ["tan", "stand", "at"];
     let outputs: Vec<&str> = vec!["tan"];
@@ -16,7 +16,7 @@ fn test_detect_simple_anagram() {
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 fn test_does_not_confuse_different_duplicates() {
     let inputs = ["eagle"];
     let outputs: Vec<&str> = vec![];
@@ -24,7 +24,7 @@ fn test_does_not_confuse_different_duplicates() {
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 fn test_eliminate_anagram_subsets() {
     let inputs = ["dog", "goody"];
     let outputs: Vec<&str> = vec![];
@@ -32,7 +32,7 @@ fn test_eliminate_anagram_subsets() {
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 fn test_detect_anagram() {
     let inputs = ["enlists", "google", "inlets", "banana"];
     let outputs: Vec<&str> = vec!["inlets"];
@@ -40,7 +40,7 @@ fn test_detect_anagram() {
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 fn test_multiple_anagrams() {
     let inputs = ["gallery", "ballerina", "regally", "clergy", "largely", "leading"];
     let mut outputs: Vec<&str> = vec!["gallery", "regally", "largely"];
@@ -51,7 +51,7 @@ fn test_multiple_anagrams() {
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 fn test_case_insensitive_anagrams() {
     let inputs = ["cashregister", "Carthorse", "radishes"];
     let outputs: Vec<&str> = vec!["Carthorse"];
@@ -59,7 +59,7 @@ fn test_case_insensitive_anagrams() {
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 fn test_unicode_anagrams() {
     // These words don't make sense, they're just greek letters cobbled together.
     let inputs = ["ΒΓΑ", "ΒΓΔ", "γβα"];
@@ -68,7 +68,7 @@ fn test_unicode_anagrams() {
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 fn test_misleading_unicode_anagrams() {
     // Despite what a human might think these words different letters, the input uses Greek A and B
     // while the list of potential anagrams uses Latin A and B.
@@ -78,7 +78,7 @@ fn test_misleading_unicode_anagrams() {
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 fn test_does_not_detect_a_word_as_its_own_anagram() {
     let inputs = ["banana"];
     let outputs: Vec<&str> = vec![];
@@ -86,7 +86,7 @@ fn test_does_not_detect_a_word_as_its_own_anagram() {
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 fn test_does_not_detect_a_differently_cased_word_as_its_own_anagram() {
     let inputs = ["bAnana"];
     let outputs: Vec<&str> = vec![];
@@ -94,7 +94,7 @@ fn test_does_not_detect_a_differently_cased_word_as_its_own_anagram() {
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 fn test_does_not_detect_a_differently_cased_unicode_word_as_its_own_anagram() {
     let inputs = ["ΑΒγ"];
     let outputs: Vec<&str> = vec![];
@@ -102,11 +102,12 @@ fn test_does_not_detect_a_differently_cased_unicode_word_as_its_own_anagram() {
 }
 
 #[test]
-#[ignore]
+// #[ignore]
 fn test_same_bytes_different_chars() {
     let inputs = ["€a"]; // E2 82 AC 61
     let outputs: Vec<&str> = vec![];
     assert_eq!(anagram::anagrams_for(
         "a⬂", // 61 E2 AC 82
-        &inputs), outputs);
+        &inputs),
+               outputs);
 }
