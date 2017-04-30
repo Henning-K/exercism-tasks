@@ -4,7 +4,14 @@ version = "0.1.0"
 authors = ["Henning-K <henning.kowalk962@web.de>"]
 
 [workspace]
-members = ["acronym", "allergies", "all-your-base", "alphametics", "anagram", "atbash-cipher", "beer-song", "bob", "bowling", "bracket-push", "custom-set", "difference-of-squares", "dominoes", "etl", "gigasecond", "grade-school",
-    "grains", "hamming", "hello-world", "largest-series-product", "leap", "luhn", "minesweeper", "nucleotide-codons", "nucleotide-count", "ocr-numbers", "pangram", "pascals-triangle", "phone-number", "queen-attack", "raindrops",
-    "rna-transcription", "robot-name", "robot-simulator", "roman-numerals", "scrabble-score", "sieve", "space-age", "sublist", "sum-of-multiples", "tournament", "triangle", "variable-length-quantity",
+members = ["acronym", "allergies", "all-your-base", "alphametics", "anagram",
+    "atbash-cipher", "beer-song", "bob", "bowling", "bracket-push", "custom-set",
+    "difference-of-squares", "dominoes", "etl", "gigasecond", "grade-school", "grains",
+    "hamming", "hello-world", "largest-series-product", "leap", "luhn", "luhn-from",
+    "luhn-trait", "minesweeper", "nucleotide-codons", "nucleotide-count", "ocr-numbers",
+    "pangram", "pascals-triangle", "phone-number", "protein-translation", "queen-attack",
+    "raindrops", "rna-transcription", "robot-name", "robot-simulator", "roman-numerals",
+    "rotational-cipher", "run-length-encoding", "scrabble-score", "sieve", "space-age",
+    "sublist", "sum-of-multiples", "tournament", "triangle", "variable-length-quantity",
     "word-count", "wordy"]
+
