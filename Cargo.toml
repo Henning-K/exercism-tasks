@@ -6,7 +6,7 @@ authors = ["Henning-K <henning.kowalk962@web.de>"]
 [workspace]
 members = ["acronym", "allergies", "all-your-base", "alphametics", "anagram",
     "atbash-cipher", "beer-song", "bob", "bowling", "bracket-push", "custom-set",
-    "difference-of-squares", "dominoes", "etl", "gigasecond", "grade-school", "grains",
+    "difference-of-squares", "dominoes", "etl", "forth", "gigasecond", "grade-school", "grains",
     "hamming", "hello-world", "largest-series-product", "leap", "luhn", "luhn-from",
     "luhn-trait", "minesweeper", "nucleotide-codons", "nucleotide-count", "ocr-numbers",
     "pangram", "pascals-triangle", "phone-number", "protein-translation", "queen-attack",
